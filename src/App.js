@@ -5,7 +5,7 @@ import pusher from "./pusherConfig";
 
 function App() {
     useEffect(() => {
-        const channelName = 'USER-suek61MwnGmlqikunMOB';
+        const channelName = 'private-USER-suek61MwnGmlqikunMOB';
         const event = 'EVENT';
         const channel = pusher.subscribe(channelName);
         channel.bind(event, (data) => {
